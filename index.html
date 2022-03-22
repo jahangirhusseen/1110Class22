@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>OOP</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+
+  </head>
+  <body>
+        
+    <div class="container my-3">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center"><h2>Add New Staff</h2></div>
+                    <div class="card-body">
+                        <div class="msg"></div>
+                        <form method="post" id="addStaff">
+                           <div class="mb-3">
+                             <label for="" class="form-label">Name</label>
+                             <input type="text" name="name" class="form-control" placeholder="">
+                           </div>
+                           <div class="mb-3">
+                            <label for="" class="form-label">Cell</label>
+                            <input type="text" name="cell" class="form-control" placeholder="">
+                          </div>
+                          <div class="mb-3">
+                            <label for="" class="form-label">Location</label>
+                            <input type="text" name="location" class="form-control" placeholder="">
+                          </div>
+                          <div class="mb-3">
+                            <label for="" class="form-label">Photo</label>
+                            <input type="text" name="photo" class="form-control" placeholder="">
+                          </div>
+                          <button type="submit" class="btn btn-primary w-100 mb-3">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-3">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card">
+                    <div class="card-header text-center"><h2>All Staff Data</h2></div>
+                    <div class="card-body">
+                        <table class=" table table-striped text-center">
+                            <thead>
+                                <tr>
+                                    <th>SL</th>
+                                    <th>Name</th>
+                                    <th>Call</th>
+                                    <th>Locatio</th>
+                                    <th>Photo</th>
+                                    <th >Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="staff_Datalist">
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script type="module" src="./assets/js/app.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
